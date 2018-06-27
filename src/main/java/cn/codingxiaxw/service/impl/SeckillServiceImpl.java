@@ -60,7 +60,7 @@ public class SeckillServiceImpl implements SeckillService {
 
         Seckill seckill = getById(seckillId);
 
-        //若是秒杀未开启
+        //若是秒杀未开启 
         Date startTime = seckill.getStartTime();
         Date endTime = seckill.getEndTime();
         //系统当前时间

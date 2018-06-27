@@ -35,7 +35,8 @@ public class SeckillServiceTest {
     @Test
     public void getSeckillList() throws Exception {
         List<Seckill> seckills=seckillService.getSeckillList();
-        System.out.println(seckills);
+       // System.out.println(seckills);
+        logger.info("list=()",seckills);
 
     }
 
@@ -45,6 +46,7 @@ public class SeckillServiceTest {
         long seckillId=1000;
         Seckill seckill=seckillService.getById(seckillId);
         System.out.println(seckill);
+       // logger.info("seckill=()",seckill);
     }
 
     @Test//完整逻辑代码测试，注意可重复执行
